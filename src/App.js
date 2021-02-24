@@ -5,7 +5,7 @@ import MainPage from "./MainPage/MainPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar bg='primary' variant='dark'>
         <Navbar.Brand>Karta pracy</Navbar.Brand>
         <Nav>
@@ -15,8 +15,7 @@ function App() {
       <Switch>
         <Route exact path='/'><MainPage/></Route>
       </Switch>
-    </BrowserRouter>
-    
+    </>
   );
 }
 

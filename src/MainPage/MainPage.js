@@ -1,5 +1,6 @@
 import { React, Component } from "react";
-import { Button, Col, Container, Row, Alert, Card } from 'react-bootstrap';
+import { Button, Col, Container, Row, Card, Form} from 'react-bootstrap';
+import TaskForm from "../TaskForm/TaskForm";
 
 class MainPage extends Component {
     render() {
@@ -7,11 +8,7 @@ class MainPage extends Component {
             <Container fluid>
             <Row>
               <Col className='col-12 col-sm-6 my-4'>
-                <Alert variant={'primary'}>
-                  To jest Alert
-                </Alert>
-                  <Button>Ok</Button>{' '}
-                  <Button>Cancel</Button>
+                <TaskForm/>
               </Col>
               <Col className='col-12 col-sm-6 my-4'>
                 <Card>
