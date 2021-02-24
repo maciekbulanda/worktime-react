@@ -19,7 +19,11 @@ class TaskForm extends Component {
               <Form.Control type='time'/>
             </Form.Group>
             <Form.Group>
-
+              <Form.Label>Temat</Form.Label>
+              <Form.Control as='select'>
+                <option>AAAA</option>
+                <option>BBBB</option>
+              </Form.Control>
             </Form.Group>
             <Button>Zapisz</Button>{' '}
           </Form>
