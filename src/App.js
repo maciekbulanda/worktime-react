@@ -1,7 +1,7 @@
 import './App.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
-import MainPage from "./MainPage/MainPage";
+import MainPage from "./Components/MainPage/MainPage";
 
 function App() {
   return (

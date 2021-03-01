@@ -27,7 +27,6 @@ export const reducer = (state = initState, action) => {
 
 
 const validate = (record) => {
-    console.log(record)
     return compareTime(record.from, record.to) < 0
 }
 
@@ -40,9 +39,9 @@ const compareTime = (from, to) => {
 }
 
 const addRecord = (oldState, record) => {
-    let newState = []
+    let newState = {...oldState}
     let found = false
-    for (const day of oldState.days) {
+    for (const day of newState.days) {
         if (day.date === record.date) {
             found = true
             try {
@@ -77,9 +76,10 @@ const addRecord = (oldState, record) => {
 }
 
 const addTime = (destination, source) => {
-    let newDestination = []
-    for (let i = 0; i < destination.length; i++) {
-        if (destination[i].from) { }
-    }
+    let newDestination = [...destination]
+    newDestination.push(source)
+    // for (let i = 0; i < destination.length; i++) {
+    //     if (destination[i].from) { }
+    // }
     return newDestination
 }

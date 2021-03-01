@@ -2,6 +2,7 @@ import { React, Component } from "react";
 import { connect } from 'react-redux';
 import { Button, Col, Container, Row, Card, Form } from 'react-bootstrap';
 import TaskForm from "../TaskForm/TaskForm";
+import TaskList from "../TaskList/TaskList";
 
 class MainPage extends Component {
   render() {
@@ -12,14 +13,7 @@ class MainPage extends Component {
             <TaskForm />
           </Col>
           <Col className='col-12 col-sm-6 col-md-5 my-4 mr-auto'>
-            <Card>
-              <Card.Header>
-                Tytuł
-              </Card.Header>
-              <Card.Body>
-                Taki sobie tekścik.
-              </Card.Body>
-            </Card>
+            <TaskList/>
           </Col>
         </Row>
         <Row>
