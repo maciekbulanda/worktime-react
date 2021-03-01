@@ -1,0 +1,20 @@
+state = {
+    days : [
+        {
+            date : ""
+            tasks : [
+                {
+                    from : "",
+                    to : "",
+                    topic : ""
+                },
+                ...
+            ]
+        },
+        ...
+    ],
+    error : {
+        error : false
+        message : ""
+    }
+}
